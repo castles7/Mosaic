@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace mosaic
+{
+    public partial class Form1 : Form
+    {
+
+        int window = 0;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        public void DrawMainMenu(System.Drawing.Graphics g)
+        {
+            List<Button> buttons = new List<Button>();           
+            string[] NamesButton = new String[3]{"Новая игра", "Выбрать уровень сложности","Выход"};
+
+            for (int i = 0; i < 3; i++)
+            {
+                Button newButton = new Button();
+         
+                newButton.Location = new Point(this.Width/3*2-50, i * this.Height/4 + 50);
+                newButton.AutoSize = true;
+                newButton.FlatAppearance.BorderSize = 0;
+                newButton.FlatStyle = FlatStyle.Flat;
+                newButton.Text = NamesButton[i];
+                newButton.Font = new Font("Comic sans ms", 16);
+                newButton.UseVisualStyleBackColor = false;
+                newButton.Image = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\button.png");
+                switch(i)
+                {
+                    case 0:
+                         newButton.Click += new System.EventHandler(button1_Click); 
+                        break;
+                    case 1:
+                         newButton.Click += new System.EventHandler(button2_Click);
+                        break;
+                    case 2:
+                         newButton.Click += new System.EventHandler(button3_Click); // button1_Click - функция обработчик события нажатия на кнопку
+                        break;
+                }
+               
+                buttons.Add(newButton);                
+                Controls.Add(newButton);
+            }
+
+            Font FontHead = new Font("Comic sans ms", 80);
+            SolidBrush Yellow = new SolidBrush(Color.Yellow);
+
+            g.DrawString("Мозаика", FontHead, Yellow, this.Width/ 7, this.Height / 4);
+
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            window = 3;
+            this.Invalidate();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            System.Drawing.Graphics formGraphics = this.CreateGraphics();
+            if (window == 0)
+                DrawMainMenu(formGraphics);
+            if (window == 3)
+                this.Close();
+           
+        }
+    }
+}

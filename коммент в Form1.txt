@@ -1,0 +1,34 @@
+
+
+            
+//System.Windows.Forms.Button button1 = new System.Windows.Forms.Button(); // создаем контрол
+//button1.Location = new System.Drawing.Point(101, 50); // устанавливаем необходимые свойства
+//button1.Name = "button1";
+//button1.Size = new System.Drawing.Size(75, 23);
+////button1.TabIndex = 0;
+//button1.Text = "busdf";
+//button1.UseVisualStyleBackColor = false;
+//button1.Click += new System.EventHandler(button1_Click); // button1_Click - функция обработчик события нажатия на кнопку
+//Controls.Add(button1); // добавляем на форму
+
+
+
+          //  List<Button> buttons = new List<Button>();
+          //  for (int i = 0; i < 10; i++)
+          //  {
+          //      Button newButton = new Button();
+          //   //   System.Windows.Forms.Button newButton = new System.Windows.Forms.Button();
+          //      newButton.Location = new Point(550, i * 40 + 50);
+          ////      newButton.Name = "newButton";
+          ////      newButton.Size = new System.Drawing.Size(75, 23);
+          //      newButton.Text = "sdffddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";
+          //      newButton.Font = new Font("Times New Roman", 10);
+          ////      newButton.TextAlign = ContentAlignment.BottomCenter;
+          //      newButton.UseVisualStyleBackColor = false;
+          //      //newButton.Font = new System.Drawing.Font("Times New Roman", 50, System.Drawing.FontStyle.Regular,
+          //      //            System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+          //      buttons.Add(newButton);
+          //      Controls.Add(newButton);
+          //  }
+
+         
