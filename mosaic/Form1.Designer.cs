@@ -34,6 +34,7 @@
             this.загрузитьИзображениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьИгруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выйтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.начатьНовуюИгруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.начатьНовуюИгруToolStripMenuItem,
             this.выбратьИзображениеToolStripMenuItem,
             this.загрузитьИзображениеToolStripMenuItem,
             this.сохранитьИгруToolStripMenuItem,
@@ -63,12 +65,14 @@
             this.выбратьИзображениеToolStripMenuItem.Name = "выбратьИзображениеToolStripMenuItem";
             this.выбратьИзображениеToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.выбратьИзображениеToolStripMenuItem.Text = "Выбрать изображение";
+            this.выбратьИзображениеToolStripMenuItem.Click += new System.EventHandler(this.выбратьИзображениеToolStripMenuItem_Click);
             // 
             // загрузитьИзображениеToolStripMenuItem
             // 
             this.загрузитьИзображениеToolStripMenuItem.Name = "загрузитьИзображениеToolStripMenuItem";
             this.загрузитьИзображениеToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.загрузитьИзображениеToolStripMenuItem.Text = "Загрузить изображение";
+            this.загрузитьИзображениеToolStripMenuItem.Click += new System.EventHandler(this.загрузитьИзображениеToolStripMenuItem_Click);
             // 
             // сохранитьИгруToolStripMenuItem
             // 
@@ -81,6 +85,14 @@
             this.выйтиToolStripMenuItem.Name = "выйтиToolStripMenuItem";
             this.выйтиToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.выйтиToolStripMenuItem.Text = "Выйти";
+            this.выйтиToolStripMenuItem.Click += new System.EventHandler(this.выйтиToolStripMenuItem_Click);
+            // 
+            // начатьНовуюИгруToolStripMenuItem
+            // 
+            this.начатьНовуюИгруToolStripMenuItem.Name = "начатьНовуюИгруToolStripMenuItem";
+            this.начатьНовуюИгруToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.начатьНовуюИгруToolStripMenuItem.Text = "Начать новую игру";
+            this.начатьНовуюИгруToolStripMenuItem.Click += new System.EventHandler(this.начатьНовуюИгруToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -111,6 +123,7 @@
         private System.Windows.Forms.ToolStripMenuItem загрузитьИзображениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сохранитьИгруToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выйтиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem начатьНовуюИгруToolStripMenuItem;
 
 
 

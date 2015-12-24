@@ -73,6 +73,50 @@ namespace mosaic
             //        break;
             //}
         }
+
+        private void выбратьИзображениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Program.MainForm.menu.ActiveWindow != 1)
+            {
+                ChoiceImage choice_image = new ChoiceImage(menu);
+                choice_image.Owner = Program.MainForm;
+                choice_image.ShowDialog();
+            }
+        }
+
+        private void загрузитьИзображениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Program.MainForm.menu.ActiveWindow != 1)
+            {
+                OpenFileDialog OFD = new OpenFileDialog();
+                OFD.ShowDialog();
+                string FileName = OFD.FileName;
+                if (FileName != "")
+                {
+                    menu.playing_zone.puzzle.ImagePuzzle = Image.FromFile(FileName);
+                    menu.playing_zone.BaseImage.BackgroundImage = Image.FromFile(FileName);
+                    menu.choice_image = true;
+                }
+            }
+        }
+
+        private void выйтиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void начатьНовуюИгруToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            this.Controls.Remove(menu.playing_zone.BackGround);
+            this.Controls.Remove(menu.playing_zone.BaseImage);
+            this.Controls.Remove(menu.playing_zone);
+            for (int i = 0; i < menu.playing_zone.buttons.Count;i++)
+                this.Controls.Remove(menu.playing_zone.buttons[i]);
+            menu = new Main_menu();
+            menu.begin_menu = true;
+        
+        }
         
 
 

@@ -11,7 +11,6 @@ namespace mosaic
     {
         List<Button> buttons = new List<Button>();
         string[] NamesButton = new String[3] { "Новая игра", "Выбрать уровень сложности", "Выход" };
-
         public Form form;
         public PlayingZone playing_zone;
         PictureBox picturebox1;
@@ -20,6 +19,8 @@ namespace mosaic
 
         int active_window;
         public bool begin_menu = true;
+        public bool choice_level = false;
+        public bool choice_image = false;
         public bool begin_play_field = true;
 
         public int ActiveWindow
@@ -138,6 +139,32 @@ namespace mosaic
             Program.MainForm.Controls.Remove(picturebox1);
         }
 
+        public void LoadDGame()
+        {
+            active_window = 1;
+            if (begin_play_field == true)
+            {
+                Clear();
+                begin_play_field = false;
+            }
+
+            if (choice_level == false)
+            {
+                playing_zone.puzzle.row_matrix = 4;
+                playing_zone.puzzle.column_matrix = 5;
+            }
+
+            if (choice_image == false)
+            {
+                playing_zone.puzzle.ImagePuzzle = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
+                playing_zone.BaseImage.BackgroundImage = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
+            }
+            //  tile.playing_zone = this;
+
+            playing_zone.Draw();
+      //      Program.MainForm.Invalidate();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             active_window = 1;
@@ -147,19 +174,34 @@ namespace mosaic
                 begin_play_field = false;
             }
 
+            if (choice_level == false)
+            {
+                playing_zone.puzzle.row_matrix = 4;
+                playing_zone.puzzle.column_matrix = 5;
+            }
+
+            if (choice_image == false)
+            {
+                playing_zone.puzzle.ImagePuzzle = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
+                playing_zone.BaseImage.BackgroundImage = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
+            }
+            //  tile.playing_zone = this;
+
             playing_zone.Draw();
             Program.MainForm.Invalidate();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            ChoiceLavel choice_lavel = new ChoiceLavel(Program.MainForm.menu);
+            choice_lavel.Owner = Program.MainForm;
+            choice_lavel.ShowDialog();
             
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            active_window = 2;
+
             Program.MainForm.Close();
         }
 

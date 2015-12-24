@@ -73,6 +73,16 @@ namespace mosaic.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20232557 {
+            get {
+                object obj = ResourceManager.GetObject("20232557", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3d_grafika_b8fea44351b0 {
             get {
                 object obj = ResourceManager.GetObject("3d-grafika-b8fea44351b0", resourceCulture);
@@ -83,9 +93,49 @@ namespace mosaic.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _60_butylka_bokal_krasivo_makro_oboi_1366x768 {
+            get {
+                object obj = ResourceManager.GetObject("60-butylka-bokal-krasivo-makro-oboi-1366x768", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6834 {
+            get {
+                object obj = ResourceManager.GetObject("6834", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BT_DULI4FbU {
+            get {
+                object obj = ResourceManager.GetObject("BT_DULI4FbU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button {
             get {
                 object obj = ResourceManager.GetObject("button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button1 {
+            get {
+                object obj = ResourceManager.GetObject("button1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +163,59 @@ namespace mosaic.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap puzzle {
+            get {
+                object obj = ResourceManager.GetObject("puzzle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_taj_mahal2 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_taj-mahal2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scQPavCqETg {
+            get {
+                object obj = ResourceManager.GetObject("scQPavCqETg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap игровое_поле {
             get {
                 object obj = ResourceManager.GetObject("игровое поле", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap кофе_2_600x449 {
+            get {
+                object obj = ResourceManager.GetObject("кофе-2-600x449", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap розы {
+            get {
+                object obj = ResourceManager.GetObject("розы", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
