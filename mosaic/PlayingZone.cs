@@ -12,29 +12,25 @@ namespace mosaic
     public partial class PlayingZone : UserControl
     {
         bool begin=true;
-        public Form form;
-
         PictureBox BackGround;
         PictureBox BaseImage;
-        PictureBox PuzzlesPlace;
+       // PictureBox PuzzlesPlace;
 
-        Panel panel;
+   //     Panel panel;
 
         List<CheckBox> buttons = new List<CheckBox>();
         string[] ImageButton = new String[3] { "C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\масштаб(+).png",
                                                "C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\масштаб(-).png",
                                                "C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\рука.png"};
 
-        public PlayingZone(Form form_)
+        public PlayingZone()
         {
             InitializeComponent();
 
-            form = form_;
-
             BackGround = new PictureBox();
             BaseImage = new PictureBox();
-            PuzzlesPlace = new PictureBox();
-            panel = new Panel();
+           // PuzzlesPlace = new PictureBox();
+         //   panel = new Panel();
 
 
             this.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -44,15 +40,16 @@ namespace mosaic
 
             BackGround.Location = new Point(0, 27);
 
-            PuzzlesPlace.Location = new Point((int)(BackGround.Width * 9), (int)(BackGround.Height * 5));
-            PuzzlesPlace.Width = 20;
-            PuzzlesPlace.Height = 20;
+            //PuzzlesPlace.Location = new Point((int)(BackGround.Width * 9), (int)(BackGround.Height * 5));
+            //PuzzlesPlace.Width = panel.Width;
+            //PuzzlesPlace.Height = panel.Height;
 
-            panel.Location = new Point((int)(BackGround.Width * 9), (int)(BackGround.Height * 4.45));
-            panel.Width = 415;
-            panel.Height = 385;
+       //     panel.Location = new Point((int)(BackGround.Width * 9), (int)(BackGround.Height * 4.45));
+       //     panel.Width = 415;
+       //     panel.Height = 385;
 
-            BaseImage.Location = new Point((int)(BackGround.Width * 9.60), (int)(BackGround.Height * 1));
+          //  BaseImage.Location = new Point((int)(BackGround.Width * 9.60), (int)(BackGround.Height * 1));
+            BaseImage.Location = new Point((int)(BackGround.Width * 0.3), (int)(BackGround.Height * 1.9));
             BaseImage.Width = 300;
             BaseImage.Height = 153;
             BaseImage.BorderStyle = BorderStyle.Fixed3D;
@@ -93,7 +90,7 @@ namespace mosaic
 
                 for (int i = 0; i < buttons.Count; i++)
                 {
-                    form.Controls.Add(buttons[i]);
+                    Program.MainForm.Controls.Add(buttons[i]);
                     BackGround.Controls.Add(buttons[i]);
                 }
 
@@ -101,43 +98,46 @@ namespace mosaic
                 | System.Windows.Forms.AnchorStyles.Left)       
                 | System.Windows.Forms.AnchorStyles.Right)));
 
-                BaseImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-               | System.Windows.Forms.AnchorStyles.Left)
-               | System.Windows.Forms.AnchorStyles.Right)));
+               // BaseImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+               //| System.Windows.Forms.AnchorStyles.Left)
+               //| System.Windows.Forms.AnchorStyles.Right)));
 
-                PuzzlesPlace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                | System.Windows.Forms.AnchorStyles.Left)
-                | System.Windows.Forms.AnchorStyles.Right)));
+                //PuzzlesPlace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                //| System.Windows.Forms.AnchorStyles.Left)
+                //| System.Windows.Forms.AnchorStyles.Right)));
 
-                panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                | System.Windows.Forms.AnchorStyles.Left)
-                | System.Windows.Forms.AnchorStyles.Right)));
+                //panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                //| System.Windows.Forms.AnchorStyles.Left)
+                //| System.Windows.Forms.AnchorStyles.Right)));
 
                 BackGround.Image = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\background_plaing zone.jpg");
                 BackGround.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 this.BackColor = Color.LavenderBlush;
                 this.BorderStyle = BorderStyle.Fixed3D;
-                panel.BackColor = Color.LavenderBlush;
+             //   panel.BackColor = Color.LavenderBlush;
                // BaseImage.BackColor = Color.Coral;
 
-                BackGround.Width = form.Width - 16;
-                BackGround.Height = form.Height - 65;
+                BackGround.Width = Program.MainForm.Width - 16;
+                BackGround.Height = Program.MainForm.Height - 65;
 
 
                 BackGround.Controls.Add(BaseImage);
-                form.Controls.Add(BaseImage);
+                Program.MainForm.Controls.Add(BaseImage);
 
+               
                 VScrollBar vScroller = new VScrollBar();
-                vScroller.Height = panel.Height;
+           //     vScroller.Height = panel.Height;
                 vScroller.Dock = DockStyle.Right;
-                panel.BorderStyle = BorderStyle.Fixed3D;
-                panel.Controls.Add(vScroller);
+                this.Controls.Add(vScroller);
+          //      panel.BorderStyle = BorderStyle.Fixed3D;
+           //     panel.Controls.Add(vScroller);
 
+           //     panel.Controls.Add(PuzzlesPlace);
              //   BackGround.Controls.Add(PuzzlesPlace);
              //   form.Controls.Add(PuzzlesPlace);
              //   PuzzlesPlace.BackColor = Color.PaleGoldenrod;
-                PuzzlesPlace.SizeMode = PictureBoxSizeMode.AutoSize;
+                //PuzzlesPlace.SizeMode = PictureBoxSizeMode.AutoSize;
            //     PuzzlesPlace.BorderStyle = BorderStyle.Fixed3D;
             //    panel.Controls.Add(PuzzlesPlace);
 
@@ -147,8 +147,8 @@ namespace mosaic
             //    form.Controls.Add(PuzzlesPlace);
               //  panel.Controls.Add(PuzzlesPlace);
                // panel.AutoScroll = true;
-                form.Controls.Add(panel);
-                BackGround.Controls.Add(panel);
+             //   form.Controls.Add(panel);
+            //    BackGround.Controls.Add(panel);
 
              //   vScroller
            //     vScroller.AutoScrollOffset = true;
@@ -157,15 +157,20 @@ namespace mosaic
             //    PuzzlesPlace.Image = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\background_plaing zone.jpg");
               //  panel.
                // panel.ScrollBars = ScrollBars.Vertical;
-                form.Controls.Add(this);
-                BackGround.Controls.Add(this);
 
-               // form.Controls.Ad
-                //Tile tile = new Tile();
-                //Image image = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
-                //tile.DrawImageOfTiles(image,0,0,60,30);
-         //       PuzzlesPlace.Controls.Add(tile.picture);
-               // til
+
+                Tile tile = new Tile();
+                Image image = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
+              //  tile.playing_zone = this;
+                tile.DrawImageOfTiles(image, 0, 0, 60, 30);
+              //  panel.Controls.Add(tile.picture);
+            
+             //   form.Controls.Add();
+                BackGround.Controls.Add(this);
+                this.Controls.Add(tile.picture);
+                Program.MainForm.Controls.Add(BackGround);
+              //  form.Controls.Add(tile.picture);
+
             }
 
 

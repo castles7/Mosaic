@@ -12,15 +12,11 @@ namespace mosaic
     public partial class Form1 : Form
     {
         public Main_menu menu;
-        public PlayingZone playing_zone;
 
         public Form1()
         {          
             InitializeComponent();
-
-            menu = new Main_menu(this);
-            playing_zone = new PlayingZone(this);
-            menu.playing_zone = playing_zone;
+            menu = new Main_menu();
         }   
         
         private void Form1_Load(object sender, EventArgs e)

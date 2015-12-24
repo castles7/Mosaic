@@ -9,32 +9,36 @@ namespace mosaic
 {
     public class Tile
     {
-        Form form;
-    //    public Puzzle puzzle;
-        public PictureBox picture;
+        public PlayingZone playing_zone;
+        //    public Puzzle puzzle;
+        public Button picture;
         Bitmap _bitmap;
         Graphics _grMap;
         bool Mouse = false;
 
         public Tile()
         {
-            picture = new PictureBox();
+      
+            picture = new Button();
+            picture.Location = new Point(400, 250);
             picture.MouseDown += new System.Windows.Forms.MouseEventHandler(Picture1_MouseDown);
             picture.MouseMove += new System.Windows.Forms.MouseEventHandler(Picture1_MouseMove);
             picture.MouseUp += new System.Windows.Forms.MouseEventHandler(Picture1_MouseUp);
-            
+
         }
 
         public void DrawImageOfTiles(Image image, int x, int y, int width, int heght)
         {
-           
-            _bitmap = new Bitmap(picture.Width,picture.Height);
+            picture.Width = width;
+            picture.Height = heght;
+            _bitmap = new Bitmap(picture.Width, picture.Height);
             _grMap = Graphics.FromImage(_bitmap);
-             Rectangle rect = new Rectangle(x,y,width,heght);
-             GraphicsUnit units = GraphicsUnit.Pixel;
-            _grMap.DrawImage(image,0,0,rect,units);
-            picture.Image = _bitmap;
-            picture.SizeMode = PictureBoxSizeMode.StretchImage;
+            Rectangle rect = new Rectangle(x, y, width, heght);
+            GraphicsUnit units = GraphicsUnit.Pixel;
+            _grMap.DrawImage(image, 0, 0, rect, units);
+            picture.BackgroundImage = _bitmap;
+            picture.BackgroundImageLayout = ImageLayout.Stretch;
+         //   picture.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
 
@@ -42,8 +46,8 @@ namespace mosaic
         {
             if (Mouse == true)
             {
-                picture.Location = new Point((Cursor.Position.X - form.Location.X), (Cursor.Position.Y - form.Location.Y));
-             //   picture.Invalidate();
+                picture.Location = new Point((Cursor.Position.X ), (Cursor.Position.Y ));
+                //   picture.Invalidate();
             }
         }
 
