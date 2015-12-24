@@ -11,16 +11,15 @@ namespace mosaic
     {
         List<Button> buttons = new List<Button>();
         string[] NamesButton = new String[3] { "Новая игра", "Выбрать уровень сложности", "Выход" };
+
         public Form form;
         public PlayingZone playing_zone;
-        PictureBox picturebox1;
+        PictureBox ImageMenu;
         Graphics _gr;
         Bitmap _bitmap;
 
         int active_window;
         public bool begin_menu = true;
-        public bool choice_level = false;
-        public bool choice_image = false;
         public bool begin_play_field = true;
 
         public int ActiveWindow
@@ -29,16 +28,17 @@ namespace mosaic
             get { return active_window; }
         }
 
-        public Main_menu()
+        public Main_menu(Form form_)
         {
+
+            form = form_;
             active_window = 0;
-            playing_zone = new PlayingZone();
-            picturebox1 = new PictureBox();
-            picturebox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+
+            ImageMenu = new PictureBox();
+            ImageMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            picturebox1.Location = new Point(0, 27);
-           
+            ImageMenu.Location = new Point(0, 27);
         }
 
         void CreateListOfButton()
@@ -47,7 +47,7 @@ namespace mosaic
             {
                 Button newButton = new Button();
 
-                newButton.Location = new Point(Program.MainForm.Width / 3 * 2 - 50, i * Program.MainForm.Height / 4 + 100);
+                newButton.Location = new Point(form.Width / 3 * 2 - 50, i * form.Height / 4 + 100);
                 newButton.AutoSize = true;
                 newButton.FlatAppearance.BorderSize = 0;
                 newButton.FlatStyle = FlatStyle.Flat;
@@ -91,24 +91,24 @@ namespace mosaic
 
         public void Draw()
         {
-            picturebox1.Image = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\menu.jpg");
-            picturebox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            ImageMenu.Image = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\menu.jpg");
+            ImageMenu.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            picturebox1.Width = Program.MainForm.Width - 16;
-            picturebox1.Height = Program.MainForm.Height - 65;
+            ImageMenu.Width = form.Width - 16;
+            ImageMenu.Height = form.Height - 65;
      //       picturebox1.Location = new Point(form.Location.X, form.Location.Y + 27);
           //         picturebox1.Layout = form.Layout;
-            Program.MainForm.Controls.Add(picturebox1);
+            form.Controls.Add(ImageMenu);
 
 
             CreateListOfButton();
             for (int i = 0; i < buttons.Count; i++)
             {
-                Program.MainForm.Controls.Add(buttons[i]);
-                picturebox1.Controls.Add(buttons[i]);
+                form.Controls.Add(buttons[i]);
+                ImageMenu.Controls.Add(buttons[i]);
             }
 
-            _bitmap = new Bitmap(picturebox1.Width, picturebox1.Height);
+            _bitmap = new Bitmap(ImageMenu.Width, ImageMenu.Height);
              
             _gr = Graphics.FromImage(_bitmap);
             _gr.Clear(Color.White);
@@ -116,7 +116,7 @@ namespace mosaic
 
             Label label = new Label();
             Font FontHead = new Font("Comic sans ms", 80);
-            label.Location = new Point((int)(Program.MainForm.Width * 0.16), (int)(Program.MainForm.Height * 0.16));
+            label.Location = new Point((int)(form.Width * 0.16), (int)(form.Height* 0.16));
             label.AutoSize = true;
             label.ForeColor = Color.Blue;
             label.Font = FontHead;
@@ -126,43 +126,17 @@ namespace mosaic
             label.BackColor = Color.FromArgb(0);
 
 
-            Program.MainForm.Controls.Add(label);
-            picturebox1.Controls.Add(label);
+            form.Controls.Add(label);
+            ImageMenu.Controls.Add(label);
 
 
         }
 
         public void Clear()
         {
-            picturebox1.Controls.Clear();
+            ImageMenu.Controls.Clear();
       //      picturebox1.Image = null;
-            Program.MainForm.Controls.Remove(picturebox1);
-        }
-
-        public void LoadDGame()
-        {
-            active_window = 1;
-            if (begin_play_field == true)
-            {
-                Clear();
-                begin_play_field = false;
-            }
-
-            if (choice_level == false)
-            {
-                playing_zone.puzzle.row_matrix = 4;
-                playing_zone.puzzle.column_matrix = 5;
-            }
-
-            if (choice_image == false)
-            {
-                playing_zone.puzzle.ImagePuzzle = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
-                playing_zone.BaseImage.BackgroundImage = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
-            }
-            //  tile.playing_zone = this;
-
-            playing_zone.Draw();
-      //      Program.MainForm.Invalidate();
+            form.Controls.Remove(ImageMenu);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -174,35 +148,20 @@ namespace mosaic
                 begin_play_field = false;
             }
 
-            if (choice_level == false)
-            {
-                playing_zone.puzzle.row_matrix = 4;
-                playing_zone.puzzle.column_matrix = 5;
-            }
-
-            if (choice_image == false)
-            {
-                playing_zone.puzzle.ImagePuzzle = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
-                playing_zone.BaseImage.BackgroundImage = Image.FromFile("C:\\Users\\Администратор\\Documents\\Александра\\Учеба\\3 курс\\5 семестр\\техн.программ\\Картинки\\7172758.jpg");
-            }
-            //  tile.playing_zone = this;
-
             playing_zone.Draw();
-            Program.MainForm.Invalidate();
+            form.Invalidate();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ChoiceLavel choice_lavel = new ChoiceLavel(Program.MainForm.menu);
-            choice_lavel.Owner = Program.MainForm;
-            choice_lavel.ShowDialog();
+            
             
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            Program.MainForm.Close();
+            active_window = 2;
+            form.Close();
         }
 
     }

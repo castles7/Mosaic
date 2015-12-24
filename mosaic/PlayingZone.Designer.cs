@@ -36,14 +36,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "PlayingZone";
-            this.Size = new System.Drawing.Size(999, 543);
+            this.Size = new System.Drawing.Size(830, 543);
             this.Load += new System.EventHandler(this.PlayingZone_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-
     }
 }

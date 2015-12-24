@@ -15,9 +15,7 @@ namespace mosaic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            MainForm = new Form1();
-            Application.Run(MainForm);
+            Application.Run(new Form1());
         }
-        static public Form1 MainForm;
     }
 }

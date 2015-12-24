@@ -23,37 +23,3 @@ C:\Users\Администратор\Documents\Александра\Учеба\3 
 C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic\mosaic\obj\x86\Debug\mosaic.csproj.GenerateResource.Cache
 C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic\mosaic\obj\x86\Debug\mosaic.BackGround.resources
 C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic\mosaic\obj\x86\Debug\mosaic.PlayingZone.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.exe
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.pdb
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\bin\Debug\mosaic.exe
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\bin\Debug\mosaic.pdb
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.csprojResolveAssemblyReference.cache
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.BackGround.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.Form1.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.PlayingZone.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.Properties.Resources.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - резервная копия\mosaic\obj\x86\Debug\mosaic.csproj.GenerateResource.Cache
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.exe
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.pdb
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\bin\Debug\mosaic.exe
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\bin\Debug\mosaic.pdb
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.csprojResolveAssemblyReference.cache
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.BackGround.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.Form1.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.PlayingZone.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.Properties.Resources.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic -\mosaic\obj\x86\Debug\mosaic.csproj.GenerateResource.Cache
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.exe
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.pdb
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\bin\Debug\mosaic.exe
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\bin\Debug\mosaic.pdb
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.csprojResolveAssemblyReference.cache
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.BackGround.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.Form1.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.PlayingZone.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.Properties.Resources.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.csproj.GenerateResource.Cache
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.ChoiceLavel.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic - - копия(до удаления контрола)\mosaic\obj\x86\Debug\mosaic.ChoiceImage.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic\mosaic\obj\x86\Debug\mosaic.ChoiceImage.resources
-C:\Users\Администратор\Documents\Александра\Учеба\3 курс\5 семестр\техн.программ\mosaic\mosaic\obj\x86\Debug\mosaic.ChoiceLavel.resources
